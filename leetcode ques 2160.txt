@@ -1,0 +1,9 @@
+class Solution {
+public:
+    int minimumSum(int num) {
+        string k=to_string(num);
+        sort(k.begin(),k.end());
+        int ans=(k[0]-'0'+k[1]-'0')*10+k[2]-'0'+k[3]-'0';
+        return ans ;
+    }
+};
